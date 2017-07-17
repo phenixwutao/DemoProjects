@@ -13,7 +13,7 @@ demo projects
 
 ## Python demo
 ## Jerkins demo
-
+Jerkins is not ready yet.
 
 ### Copy Right @ phenixwutao
 Company PHENIX Ltd
