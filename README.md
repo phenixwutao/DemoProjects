@@ -13,7 +13,7 @@ demo projects
 
 ## Python demo
 ## Jerkins demo
-Jerkins is not ready yet.
+Jerkins is not ready yet. change from myfeature.
 
 ### Copy Right @ phenixwutao
 Company PHENIX Ltd
