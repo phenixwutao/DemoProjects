@@ -12,4 +12,5 @@ This is a C++ demo project.
 demo projects
 
 
-Copy Right @ phenixwutao
+### Copy Right @ phenixwutao
+Company PHENIX Ltd
