@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+echo remove exe and back up files
+rm -vf ./*.exe ./*~
+
