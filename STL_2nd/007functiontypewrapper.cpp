@@ -39,19 +39,23 @@ public:
 
 int main()
 {
-  vector<std::function<void(int,int)> > tasks;
- tasks.push_back(func);
- tasks.push_back([](int x, int y){ cout << x*y<< endl;});
- for (std::function<void(int,int)> f : tasks)
-   {
-     f(3,5);
-   }
+  vector<std::function<void(int, int)> > tasks;
+  tasks.push_back(func);
+  tasks.push_back([](int x, int y) { cout << x * y << endl; });
+  for (std::function<void(int, int)> f : tasks)
+    {
+    f(3, 5);
+    }
 
- std::function<void(const C&,int,int)> mf;
- mf = &C::calc;
- mf(C(),  5, 3);
+  std::function<void(const C&, int, int)> mf;
+  mf = &C::calc;
+  mf(C(), 5, 3);
 
- return 0;  
+  std::function<void(const C&, int, int)> mf1;
+  mf1 = &C::calc;
+  C obj1;
+  mf1(obj1, 6, 3);
+  return 0;  
 }
 
 
