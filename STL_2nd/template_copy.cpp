@@ -1,10 +1,12 @@
 #include <iostream>
 
+#include <array>
 #include <vector>
 #include <deque>
 #include <list>
 #include <map>
 #include <set>
+#include <forward_list>
 
 #include <memory> // smart pointers
 
