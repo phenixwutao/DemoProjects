@@ -32,7 +32,20 @@ using namespace std;
 
 int main()
 {
+  list<int> coll1 = {1,2,3,4,5,6,7,8,9};
+  vector<int> coll2(coll1.size());
+  copy(coll1.cbegin(), coll1.cend(), std::back_inserter(coll2));
 
+  deque<int> coll3;
+  copy(coll1.cbegin(), coll1.cend(), std::front_inserter(coll3));
+  
+  set<int> coll4;
+  copy(coll1.cbegin(), coll1.cend(), std::inserter(coll4, coll4.begin()));
+  
+  for(auto it : coll4)
+    printf("%d ", it);
+  cout << endl;
+	    
   return 0;
 }
 
