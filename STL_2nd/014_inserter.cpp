@@ -32,6 +32,11 @@ using namespace std;
 
 int main()
 {
+  /*******************************************************************************************
+   * back_inserter(container)  Appends in the same order by using push_back(val)
+   * front_inserter(container) Inserts at the front in reverse order by using push_front(val)
+   * inserter(container,pos)   Inserts at pos (in the same order) by using insert(pos,val)
+   *******************************************************************************************/
   list<int> coll1 = {1,2,3,4,5,6,7,8,9};
   vector<int> coll2(coll1.size());
   copy(coll1.cbegin(), coll1.cend(), std::back_inserter(coll2));
