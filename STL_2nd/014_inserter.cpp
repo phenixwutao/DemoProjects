@@ -30,6 +30,7 @@
 
 using namespace std;
 
+
 int main()
 {
   list<int> coll1 = {1,2,3,4,5,6,7,8,9};
@@ -45,6 +46,9 @@ int main()
   for(auto it : coll4)
     printf("%d ", it);
   cout << endl;
+
+  unsigned int n = std::thread::hardware_concurrency();
+  std::cout << n << " concurrent threads are supported.\n";
 	    
   return 0;
 }
