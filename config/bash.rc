@@ -95,7 +95,8 @@ alias cs='cd ..'
 alias cp='cp -iuv'
 alias mv='mv -iuv'
 alias rm='rm -iv'
-alias jed='emacs -nw'
+alias lt='ls -lht'
+alias jed='emacs -nw @$'
 alias demo='cd /mnt/c/Work/Dev_Tools/Xue/demoProjects'
 export PATH=$PATH:.
 

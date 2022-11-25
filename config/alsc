@@ -1,0 +1,19 @@
+#! /usr/bin/bash
+#  extension="${filename##*.}"
+#  filename="${filename%.*}" 
+# CPPFILE=$1
+# FILENAME=${CPPFILE%.*}
+# FILEEXT=${CPPFILE##*.}
+FILEEXE=123987.exe
+SRCFILES=$@
+echo Compile cpp files "$SRCFILES"
+rm $FILEEXE
+echo g++-12 --std=c++20 $SRCFILES -o $FILEEXE
+g++-12 --std=c++20 $SRCFILES -o $FILEEXE
+echo please execute $FILEEXE ...
+echo ------------------------------------------------
+if [[ -f "$FILEEXE" ]]; then
+  ./$FILEEXE
+fi
+echo ------------------------------------------------
+

@@ -1,0 +1,22 @@
+#! /usr/bin/bash
+#  extension="${filename##*.}"
+#  filename="${filename%.*}" 
+CPPFILE=$1
+FILENAME=${CPPFILE%.*}
+FILEEXT=${CPPFILE##*.}
+echo Compile cpp file $CPPFILE
+
+if [[ -f "$FILENAME.exe" ]]; then
+  rm $FILENAME.exe
+fi
+
+echo g++-12 --std=c++20 $FILENAME.cpp -o $FILENAME.exe 
+g++-12 --std=c++20 $FILENAME.cpp -o $FILENAME.exe 
+echo please execute $FILENAME.exe ...
+
+echo ------------------------------------------------
+if [[ -f "$FILENAME.exe" ]]; then
+  ./$FILENAME.exe
+fi
+echo ------------------------------------------------
+
