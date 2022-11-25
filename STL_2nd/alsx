@@ -1,9 +1,22 @@
-#!/usr/bin/bash
-EXEFILE=123789.exe
-rm -vf $EXEFILE
-echo g++-12 --std=c++20 -o $EXEFILE  $1
-g++-12 --std=c++20 -o $EXEFILE  $1
-echo Please execute $EXEFILE
-echo -----------------------------------------------------------
-./$EXEFILE
-echo -----------------------------------------------------------
+#! /usr/bin/bash
+#  extension="${filename##*.}"
+#  filename="${filename%.*}" 
+CPPFILE=$1
+FILENAME=${CPPFILE%.*}
+FILEEXT=${CPPFILE##*.}
+echo Compile cpp file $CPPFILE
+
+if [[ -f "$FILENAME.exe" ]]; then
+  rm $FILENAME.exe
+fi
+
+echo g++-12 --std=c++20 $FILENAME.cpp -o $FILENAME.exe 
+g++-12 --std=c++20 $FILENAME.cpp -o $FILENAME.exe 
+echo please execute $FILENAME.exe ...
+
+echo ------------------------------------------------
+if [[ -f "$FILENAME.exe" ]]; then
+  ./$FILENAME.exe
+fi
+echo ------------------------------------------------
+
