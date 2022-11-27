@@ -1,2 +1,6 @@
-page 213
+page 233 function object
+page 246 errors
+
+page 248 exception handling
+page 257 container operations
 

@@ -8,6 +8,8 @@
 #include <set>
 #include <forward_list>
 
+#include <iterator>
+
 #include <memory> // smart pointers
 
 #include <thread>
@@ -54,6 +56,13 @@ int main()
 
   unsigned int n = std::thread::hardware_concurrency();
   std::cout << n << " concurrent threads are supported.\n";
+  
+  printf("please enter some strings, press Ctrl-D to stop\n");
+
+  vector<string> v1;
+  copy(istream_iterator<string>(cin), istream_iterator<string>(), back_inserter(v1));
+  sort(v1.begin(), v1.end());
+  unique_copy(v1.begin(), v1.end(), ostream_iterator<string>(cout, "\n"));
 	    
   return 0;
 }

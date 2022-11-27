@@ -7,9 +7,6 @@
 #include <map>
 #include <set>
 #include <forward_list>
-#include <unordered_map>
-#include <unordered_set>
-
 
 #include <iterator>
 
@@ -41,6 +38,18 @@ using namespace LFen;
 
 int main()
 {
+  deque<int> coll = { 1, 2, 3, 5, 7, 11, 13, 17, 19 };
+  transform (coll.cbegin(),coll.cend(), // source
+	     coll.begin(), // destination
+	     negate<int>()); // operation
+  PrintAll(coll, "after negate");
+  
+  transform (coll.cbegin(),coll.cend(), // first source
+	     coll.cbegin(),             // second source
+	     coll.begin(),              // destination
+	     multiplies<int>());        // operation
+  PrintAll(coll, "after multiplies");
+  
   return 0;
 }
 

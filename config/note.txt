@@ -1,0 +1,26 @@
+Debugger:
+GDB
+LLDB
+
+https://training.linuxfoundation.cn/
+
+https://falksangdata.no/wp-content/uploads/2022/  good books
+
+https://github.com/PowerShell/PowerShell/releases/download/v7.3.0/powershell_7.3.0-1.deb_amd64.deb
+
+sudo dpkg -i powershell-lts_7.3.0-1.deb_amd64.deb
+sudo apt-get install -f
+
+Ubuntu 22.0 dot net 6
+[1] Install the SDK
+sudo apt-get update && sudo apt-get install -y dotnet6
+
+[2] Install the runtime
+sudo apt-get update && sudo apt-get install -y aspnetcore-runtime-6.0
+
+use this option:
+sudo apt-get install -y dotnet-runtime-6.0
+
+[3] check dit net version
+dotnet --list-sdks
+

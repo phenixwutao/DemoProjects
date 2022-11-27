@@ -7,9 +7,6 @@
 #include <map>
 #include <set>
 #include <forward_list>
-#include <unordered_map>
-#include <unordered_set>
-
 
 #include <iterator>
 
@@ -41,6 +38,17 @@ using namespace LFen;
 
 int main()
 {
+  deque<int> coll;
+  for(int i=1; i<=9; ++i) {
+    coll.push_back(i);
+    coll.push_front(i);
+  }
+  PrintAll(coll, "coll default without sort");
+  sort(coll.begin(), coll.end());
+  PrintAll(coll, "coll sort default");
+  
+  sort(coll.begin(), coll.end(), greater<int>());
+  PrintAll(coll, "coll sort greater");
   return 0;
 }
 

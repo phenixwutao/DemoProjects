@@ -7,9 +7,6 @@
 #include <map>
 #include <set>
 #include <forward_list>
-#include <unordered_map>
-#include <unordered_set>
-
 
 #include <iterator>
 
@@ -24,7 +21,6 @@
 #include <climits> // old number limit
 #include <cfloat>  // old float limit
 #include <limits> // C++11 limit header
-#include <cstdlib> // math libs function e.g. abs()
 
 #include <functional> // ref wrapper std::ref()
 
@@ -34,13 +30,33 @@
 
 #include <chrono> // time and clocks
 
-
 #include "util.hpp"
+
 using namespace std;
 using namespace LFen;
 
+int square1(int v)
+{
+  int sqr = v * v;
+  //  cout << "sqr is: " << sqr << endl;
+  return sqr;
+}
+
 int main()
 {
+  std::set<int> coll1;
+  std::vector<int> coll2;
+  for(int i = 1; i <= 9; ++i)
+    coll1.insert(i);
+
+  PrintAll(coll1, "init set");
+
+  transform(coll1.cbegin(), coll1.cend(), // source
+	    std::back_inserter(coll2),  // destination
+	    square1); // operation
+
+  PrintAll(coll2, "transform vector back_inserter");
+  
   return 0;
 }
 

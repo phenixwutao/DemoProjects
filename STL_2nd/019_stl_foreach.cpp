@@ -7,9 +7,6 @@
 #include <map>
 #include <set>
 #include <forward_list>
-#include <unordered_map>
-#include <unordered_set>
-
 
 #include <iterator>
 
@@ -24,7 +21,6 @@
 #include <climits> // old number limit
 #include <cfloat>  // old float limit
 #include <limits> // C++11 limit header
-#include <cstdlib> // math libs function e.g. abs()
 
 #include <functional> // ref wrapper std::ref()
 
@@ -34,13 +30,23 @@
 
 #include <chrono> // time and clocks
 
-
-#include "util.hpp"
 using namespace std;
-using namespace LFen;
+
+void print(int e)
+{
+  cout << e << ' ';
+}
 
 int main()
 {
+  vector<int> coll = {1,2,3,4,5,6,7,8};
+  for_each(coll.cbegin(), coll.cend(), print);
+  cout << endl;
+  
+  for_each(coll.cbegin(), coll.cend(), [](int e){
+    cout << e << ", ";}
+    );
+  cout << endl;
   return 0;
 }
 
