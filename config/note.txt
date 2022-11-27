@@ -1,3 +1,16 @@
+Books:  
+
+File Name: Packt.Linux.Kernel.Programming.178995343X.rar
+
+Hands-On System Programming with Linux: Explore Linux system programming interfaces, theory, and practice
+Packt.Hands-On.System.Programming.with.Linux.1788998472.rar
+Packt.Hands-On.System.Programming.with.Linux.1788998472.rar
+
+https://github.com/PacktPublishing/Linux-Kernel-Programming.git
+https://github.com/PacktPublishing/Linux-Kernel-Programming-Part-2.git
+
+===========================================================================
+
 Debugger:
 GDB
 LLDB
@@ -23,4 +36,7 @@ sudo apt-get install -y dotnet-runtime-6.0
 
 [3] check dit net version
 dotnet --list-sdks
+
+
+sed -e "s/\r//g" old_file > new_file
 

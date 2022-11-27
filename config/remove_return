@@ -1,0 +1,7 @@
+#! /usr/bin/bash
+FILE=$1
+cp -vf $FILE temp_remove_return.txt
+rm -vf $FILE
+sed -e "s/\r//g" temp_remove_return.txt > $FILE
+echo Removing return symbol in $FILE is done
+echo

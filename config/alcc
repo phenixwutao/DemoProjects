@@ -1,0 +1,21 @@
+#! /usr/bin/bash
+#  extension="${filename##*.}"
+#  filename="${filename%.*}" 
+# CPPFILE=$1
+# FILENAME=${CPPFILE%.*}
+# FILEEXT=${CPPFILE##*.}
+FILEEXE=123788.exe
+SRCFILES=$@
+echo Compile C files "$SRCFILES"
+if [[ -f "$FILEEXE" ]]; then
+  rm $FILEEXE
+fi
+echo gcc-12 $SRCFILES -o $FILEEXE -L$PWD -lm -Wall -Wextra -pedantic -fPIC
+     gcc-12 $SRCFILES -o $FILEEXE -L$PWD -lm -Wall -Wextra -pedantic -fPIC
+echo please execute $FILEEXE ...
+echo ------------------------------------------------
+if [[ -f "$FILEEXE" ]]; then
+  ./$FILEEXE
+fi
+echo ------------------------------------------------
+
