@@ -10,7 +10,7 @@ namespace LFen{
     cout << message << endl;
     for(const auto& it : coll)
       {
-      cout << it << ' ';
+	cout << it << ' ';
       }
     cout << endl;
   }

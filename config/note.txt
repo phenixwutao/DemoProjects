@@ -40,3 +40,10 @@ dotnet --list-sdks
 
 sed -e "s/\r//g" old_file > new_file
 
+==============================================================================
+sudo apt-get install build-essential linux-headers-`uname -r`
+uname -srmv
+cat /proc/version
+
+sudo apt update
+sudo apt full-upgrade

@@ -3,4 +3,7 @@ page 246 errors
 
 page 248 exception handling
 page 257 container operations
-
+page 281 vector
+page 290 list
+page 309 forward_list
+page 315 set

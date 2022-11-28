@@ -1,0 +1,49 @@
+#include <iostream>
+
+#include <array>
+#include <vector>
+
+#include <deque>
+#include <list>
+#include <map>
+#include <set>
+#include <forward_list>
+#include <unordered_map>
+#include <unordered_set>
+
+
+#include <iterator>
+
+#include <memory> // smart pointers
+
+#include <thread>
+#include <mutex>
+#include <condition_variable>
+#include <atomic>
+#include <future>
+
+
+#include <climits> // old number limit
+#include <cfloat>  // old float limit
+#include <limits> // C++11 limit header
+#include <cstdlib> // math libs function e.g. abs()
+
+#include <functional> // ref wrapper std::ref()
+
+#include <algorithm> // utility function min, max
+
+#include <utility> // relation operations rel_ops
+
+#include <chrono> // time and clocks
+
+
+#include "util.hpp"
+using namespace std;
+using namespace LFen;
+
+int main()
+{
+  return 0;
+}
+
+

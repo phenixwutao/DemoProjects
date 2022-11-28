@@ -55,6 +55,7 @@ int main()
 
   vector<int> v5 = std::move(v2);
   PrintAll(v5, "v5 after move");
+  cout << "vector max size " << v5.max_size() << endl;
   return 0;
 }
 
