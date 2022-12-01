@@ -9,6 +9,14 @@ Packt.Hands-On.System.Programming.with.Linux.1788998472.rar
 https://github.com/PacktPublishing/Linux-Kernel-Programming.git
 https://github.com/PacktPublishing/Linux-Kernel-Programming-Part-2.git
 
+Hands-On System Programming with Linux: Explore Linux system programming interfaces, theory, and practice
+by Kaiwan N Billimoria
+Length: 794 pages
+Publisher: Packt Publishing
+Publication Date: 2018-10-31
+ISBN-10: 1788998472
+ISBN-13: 9781788998475
+
 ===========================================================================
 
 Debugger:

@@ -105,5 +105,8 @@ int main()
   list1.merge(list2);
   PrintAll(list1, "merge list 1");
   PrintAll(list2, "merge list 2");
+
+  int* pR = new int;
+  *pR = 4;
   return 0;
 }
