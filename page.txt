@@ -7,3 +7,6 @@ page 281 vector
 page 290 list
 page 309 forward_list
 page 315 set
+page 345 map
+page 355 unordered_map
+
