@@ -17,6 +17,16 @@ Publication Date: 2018-10-31
 ISBN-10: 1788998472
 ISBN-13: 9781788998475
 
+Linux System Programming Techniques: Become a proficient Linux system programmer using expert recipes and techniques
+by Jack-Benny Persson
+Length: 432 pages
+Edition: 1
+Language: English
+Publisher: Packt Publishing
+Publication Date: 2021-05-07
+ISBN-10: 1789951283
+ISBN-13: 9781789951288
+
 Git for Programmers: Master Git for effective implementation of version control for your programming projects
 by Jesse Liberty
 Length: 244 pages
@@ -35,6 +45,9 @@ LLDB
 https://training.linuxfoundation.cn/
 
 https://falksangdata.no/wp-content/uploads/2022/  good books
+https://falksangdata.no/wp-content/uploads/2022/02/
+
+https://www.kgay4all.com/seioqueseiporleroqueleio/Books/
 
 https://github.com/PowerShell/PowerShell/releases/download/v7.3.0/powershell_7.3.0-1.deb_amd64.deb
 
