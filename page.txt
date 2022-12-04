@@ -1,6 +1,7 @@
+-----------------------------------------------------------------------
+[1] STL 2nd edition : pages 1190
 page 233 function object
 page 246 errors
-
 page 248 exception handling
 page 257 container operations
 page 281 vector
@@ -9,4 +10,17 @@ page 309 forward_list
 page 315 set
 page 345 map
 page 355 unordered_map
+
+-----------------------------------------------------------------------
+[2] C++17 Linux
+Hands-On System Programming with C++: pages 541 Dr. Rian Quinn 2018
+Hands-On System Programming with C++ Build performant and concurrent Unix and Linux systems with C++17 
+Page:
+
+-----------------------------------------------------------------------
+[3] Linux System Programming
+Hands-On System Programming with Linux : pages 780
+Explore Linux system programming interfaces, theory, and practice
+Kaiwan N Billimoria 2018
+Page: 
 

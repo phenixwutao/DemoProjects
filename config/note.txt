@@ -27,6 +27,16 @@ Publication Date: 2021-05-07
 ISBN-10: 1789951283
 ISBN-13: 9781789951288
 
+Hands-On System Programming with C++: Build performant and concurrent Unix and Linux systems with C++17
+by Dr. Rian Quinn
+Length: 552 pages
+Edition: 1
+Language: English
+Publisher: Packt Publishing
+Publication Date: 2018-12-26
+ISBN-10: 1789137888
+ISBN-13: 9781789137880
+
 Git for Programmers: Master Git for effective implementation of version control for your programming projects
 by Jesse Liberty
 Length: 244 pages
@@ -50,6 +60,12 @@ https://falksangdata.no/wp-content/uploads/2022/02/
 https://www.kgay4all.com/seioqueseiporleroqueleio/Books/
 
 https://github.com/PowerShell/PowerShell/releases/download/v7.3.0/powershell_7.3.0-1.deb_amd64.deb
+
+https://www.letmeread.net/
+https://www.letmeread.net/
+https://downmagaz.net/
+https://downmagaz.net/
+
 
 sudo dpkg -i powershell-lts_7.3.0-1.deb_amd64.deb
 sudo apt-get install -f
@@ -77,3 +93,4 @@ cat /proc/version
 
 sudo apt update
 sudo apt full-upgrade
+
