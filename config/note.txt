@@ -46,6 +46,33 @@ Publisher: Packt Publishing
 Publication Date: 2021-07-09
 ISBN-10: B0978TF66B
 
+https://foxgreat.com/professional-c-5-0-and-net-4-5-1/
+https://foxgreat.com/professional-c-5-0-and-net-4-5-1/
+Professional C# 5.0 and .NET 4.5.1
+by Christian Nagel, Jay Glynn, Morgan Skinner
+Length: 1560 pages
+Edition: 1
+Language: English
+Publisher: Wrox
+Publication Date: 2014-02-24
+ISBN-10: 1118833031
+ISBN-13: 9781118833032
+
+https://foxgreat.com/professional-c-7-and-net-core-2-0-7th-edition/
+Professional C# 7 and .NET Core 2.0, 7th Edition
+by Christian Nagel
+Length: 1440 pages
+Edition: 7
+Language: English
+Publisher: Wrox
+Publication Date: 2018-04-10
+ISBN-10: 1119449278
+ISBN-13: 9781119449270
+
+===========================================================================
+https://gist.github.com/baiwfg2/af827b8b75eebf8ab29f5531a0d265ce
+https://gist.github.com/baiwfg2/af827b8b75eebf8ab29f5531a0d265ce
+
 ===========================================================================
 
 Debugger:
