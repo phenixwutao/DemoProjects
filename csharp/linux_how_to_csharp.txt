@@ -1,0 +1,16 @@
+[1] how to install mono C# on ubuntu linux?
+sudo apt update
+sudo apt-get install -y dotnet-sdk-6.0
+sudo apt install mono-mcs
+sudo apt install mono-utils
+sudo apt install mono-complete
+
+[2] how to compiler C# code?
+mcs -out:geeks.exe geeks.cs
+mono geeks.exe
+
+To decompile this executable file run the following command:
+monodis –output=geeks.txt geeks.exe
+
+Note: need to disconnect VPN
+

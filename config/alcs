@@ -1,0 +1,15 @@
+#! /usr/bin/bash
+FILEEXE=123787.exe
+SRCFILES=$1
+##SRCFILES=$@
+echo Compile cs files "$SRCFILES"
+rm $FILEEXE
+mcs -out:$FILEEXE $SRCFILES
+echo please execute $FILEEXE ...
+echo ------------------------------------------------
+if [[ -f "$FILEEXE" ]]; then
+  mono ./$FILEEXE
+fi
+echo ------------------------------------------------
+
+

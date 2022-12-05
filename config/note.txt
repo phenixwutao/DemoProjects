@@ -11,7 +11,7 @@ https://github.com/PacktPublishing/Linux-Kernel-Programming-Part-2.git
 
 Hands-On System Programming with Linux: Explore Linux system programming interfaces, theory, and practice
 by Kaiwan N Billimoria
-Length: 794 pages
+Length: 794 pages OK
 Publisher: Packt Publishing
 Publication Date: 2018-10-31
 ISBN-10: 1788998472
@@ -19,7 +19,7 @@ ISBN-13: 9781788998475
 
 Linux System Programming Techniques: Become a proficient Linux system programmer using expert recipes and techniques
 by Jack-Benny Persson
-Length: 432 pages
+Length: 432 pages OK
 Edition: 1
 Language: English
 Publisher: Packt Publishing
@@ -29,7 +29,7 @@ ISBN-13: 9781789951288
 
 Hands-On System Programming with C++: Build performant and concurrent Unix and Linux systems with C++17
 by Dr. Rian Quinn
-Length: 552 pages
+Length: 552 pages OK
 Edition: 1
 Language: English
 Publisher: Packt Publishing
