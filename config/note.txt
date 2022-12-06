@@ -75,6 +75,7 @@ https://gist.github.com/baiwfg2/af827b8b75eebf8ab29f5531a0d265ce
 https://www.9080hou.com/
 https://www.9080hou.com/
 https://docer.pl/
+https://cheatography.com/
 ===========================================================================
 
 Debugger:
