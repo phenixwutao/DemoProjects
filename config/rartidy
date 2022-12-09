@@ -1,0 +1,33 @@
+#! /usr/bin/bash
+#  extension="${filename##*.}"
+#  filename="${filename%.*}" 
+INPUTFILE=$1
+FILENAME=${INPUTFILE%.*}
+FILEEXT=${INPUTFILE##*.}
+echo File name: $FILENAME
+echo File ext:  $FILEEXT
+
+LOGFILE=$0.log
+
+rar l $FILENAME.$FILEEXT > $LOGFILE
+echo
+PDFCHECK=$(echo `grep -i 'pdf' $LOGFILE | awk '{print $5}'`)
+EPUBCHECK=$(echo `grep -i 'epub' $LOGFILE | awk '{print $5}'`)
+
+echo Find PDF format ......
+echo $PDFCHECK
+echo $EPUBCHECK
+
+DELETEFILENAME=${PDFCHECK%.*}
+
+if [[ -n $PDFCHECK ]]; then
+  cat $LOGFILE
+  rar d $INPUTFILE  $DELETEFILENAME.mobi  $DELETEFILENAME.epub $DELETEFILENAME.azw3
+elif [[ -n $EPUBCHECK ]]; then
+  cat $LOGFILE
+  rar d $INPUTFILE  $DELETEFILENAME.mobi  $DELETEFILENAME.azw3
+fi
+echo ------------------------------------------------
+rar l $INPUTFILE
+echo ------------------------------------------------
+

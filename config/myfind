@@ -1,0 +1,37 @@
+#! /usr/bin/bash
+# Define color variables
+red='\033[0;31m'
+green='\033[0;32m'
+yellow='\033[0;33m'
+blue='\033[0;34m'
+magenta='\033[0;35m'
+cyan='\033[0;36m'
+
+echo ---------------------------------------------------------------
+echo -e ${magenta}Welcome to searching bash script:
+while read -p "Please enter search text: <Ctrl+C to stop> " KEYTEXT
+do
+if [ -z "$KEYTEXT" ]
+then
+  echo
+else
+  #echo -e ${cyan}"search text $KEYTEXT"  ${nocolor}
+  WILDCARDTEXT=*$KEYTEXT*
+  echo -e ${cyan}--------------------------------------------------------------${nocolor}
+  echo -e ${cyan}Will search by wild card \"$WILDCARDTEXT\"${nocolor}
+  echo -e ${cyan}"find ./ -name \"$WILDCARDTEXT\"" ${nocolor}
+  ##FINDEXEC=$(echo "find ./ -name '$WILDCARDTEXT'")
+  ##echo command is: $FINDEXEC
+  FINDFILES=$(find ./ -name "$WILDCARDTEXT")
+  echo $FINDFILES
+  #for FILEITEM in $FINDFILES
+  #do
+  #  echo $FILEITEM
+  #done
+  echo --------------------------------------------------------------
+  echo -e ${magenta} 
+  #break
+fi
+done
+echo -e ${nocolor}
+
