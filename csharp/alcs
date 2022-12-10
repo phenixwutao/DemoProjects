@@ -3,8 +3,14 @@ FILEEXE=123787.exe
 SRCFILES=$1
 ##SRCFILES=$@
 echo Compile cs files "$SRCFILES"
-rm $FILEEXE
+
+if [[ -f "$FILEEXE" ]]; then
+  rm $FILEEXE
+fi
+
+echo mcs -out:$FILEEXE $SRCFILES
 mcs -out:$FILEEXE $SRCFILES
+
 echo please execute $FILEEXE ...
 echo ------------------------------------------------
 if [[ -f "$FILEEXE" ]]; then

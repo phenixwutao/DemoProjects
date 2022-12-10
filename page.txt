@@ -15,7 +15,7 @@ page 355/1190 unordered_map
 [2] C++17 Linux
 Hands-On System Programming with C++: pages 541 Dr. Rian Quinn 2018
 Hands-On System Programming with C++ Build performant and concurrent Unix and Linux systems with C++17 
-Page: 195/541
+Page: 222/541
 
 -----------------------------------------------------------------------
 [3] Linux System Programming
@@ -23,4 +23,7 @@ Hands-On System Programming with Linux : pages 780
 Explore Linux system programming interfaces, theory, and practice
 Kaiwan N Billimoria 2018
 Page: 
+
+[4] C# in a Nutshell
+page 35
 
