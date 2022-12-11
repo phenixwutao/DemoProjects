@@ -90,6 +90,7 @@ class Test
       unchecked { int z = xx + 1; }
       Console.WriteLine(xx);
       Console.WriteLine(yy);
+      Console.WriteLine (double.IsNaN (0.0 / 0.0)); // True
     }
   }
 
