@@ -27,3 +27,6 @@ Page:
 [4] C# in a Nutshell
 page 37
 
+[5] C++20
+
+Page: 73/659 pre-defined concepts
