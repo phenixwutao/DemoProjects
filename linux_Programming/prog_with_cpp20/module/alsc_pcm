@@ -1,0 +1,19 @@
+#! /usr/bin/bash
+#  extension="${filename##*.}"
+#  filename="${filename%.*}" 
+CPPFILE=$1
+FILENAME=${CPPFILE%.*}
+FILEEXT=${CPPFILE##*.}
+FILEEXE=123789.exe
+SRCFILES=$@
+echo Compile cpp files "$SRCFILES"
+rm $FILEEXE
+echo g++-12 --std=c++20 -c $SRCFILES -Wall -Wextra -fmodules-ts -o $FILENAME.o
+     g++-12 --std=c++20 -c $SRCFILES -Wall -Wextra -fmodules-ts -o $FILENAME.o
+echo please link and build $FILEEXE ...
+echo ------------------------------------------------
+if [[ -f "$FILENAME.o" ]]; then
+  ls $FILENAME.o
+fi
+echo ------------------------------------------------
+
