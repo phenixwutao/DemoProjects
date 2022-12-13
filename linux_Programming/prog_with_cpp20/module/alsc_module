@@ -1,0 +1,9 @@
+# g++ -c -std=c++20 -fmodules-ts func.cxx
+# g++ -c -std=c++20 -fmodules-ts main.cpp 
+# g++ main.o func.o -o App.exe
+
+rm 123789.exe
+g++-12 --std=c++20 -c math.cpp   -fmodules-ts  -o math.pcm
+g++-12 --std=c++20 -c client.cpp -fmodules-ts  -o client.pcm
+g++-12 math.o client.o -o 123789.exe
+
