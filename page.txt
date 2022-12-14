@@ -24,9 +24,9 @@ Explore Linux system programming interfaces, theory, and practice
 Kaiwan N Billimoria 2018
 Page: 
 
-[4] C# in a Nutshell
+[4] C# 7.0 in a Nutshell
 page 37
 
 [5] C++20
-Page: 162/659 pre-defined concepts
+Page: 209/659 pre-defined concepts
 
