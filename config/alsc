@@ -8,8 +8,8 @@ FILEEXE=123789.exe
 SRCFILES=$@
 echo Compile cpp files "$SRCFILES"
 rm $FILEEXE
-echo g++-12 --std=c++20 $SRCFILES -o $FILEEXE
-g++-12 --std=c++20 $SRCFILES -o $FILEEXE
+echo g++-12 --std=c++20 -Wall -Wextra $SRCFILES -o $FILEEXE
+g++-12 --std=c++20 -Wall -Wextra $SRCFILES -o $FILEEXE
 echo please execute $FILEEXE ...
 echo ------------------------------------------------
 if [[ -f "$FILEEXE" ]]; then
