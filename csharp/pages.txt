@@ -1,0 +1,3 @@
+C# 7.0
+page 36: double Versus decimal
+page 42: arrays

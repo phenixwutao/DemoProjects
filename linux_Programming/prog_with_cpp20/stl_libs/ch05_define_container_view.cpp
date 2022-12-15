@@ -42,6 +42,8 @@ public:
   }
 };
 
+// tell the compiler how to deduce template parameter when use ContainerView(myVec)
+// apply:   ContainerView<std::ranges::views::all_t<std::vector<int>&>>(myVec);
 template<typename Range>
 ContainerView(Range&& range) -> ContainerView<std::ranges::views::all_t<Range>>;
 

@@ -8,4 +8,4 @@ Ctrl+Alt+u		move up in parenthetical structure
 Ctrl+Alt+d		move down parenthetical structure
 
 Ctrl Up/Down Arrow	Page up/Down
-
+Ctrl + X H              select all

@@ -13,6 +13,12 @@ struct Deal
 
 class Test
 {
+  public class Dude
+  {
+    public string Name;
+    public Dude (string n) { Name = n; }
+  }
+
   static void Main()
   {
     Point p1 = new Point();
@@ -91,6 +97,64 @@ class Test
       Console.WriteLine(xx);
       Console.WriteLine(yy);
       Console.WriteLine (double.IsNaN (0.0 / 0.0)); // True
+    }
+
+    // check rounding errors and decimal points
+    {
+      float x = 0.1f; // Not quite 0.1
+      Console.WriteLine (x + x + x + x + x + x + x + x + x + x); // 1.0000001
+      decimal m = 1M / 6M; // 0.1666666666666666666666666667M
+      double d = 1.0 / 6.0; // 0.16666666666666666
+      Console.WriteLine("d={0}", d);
+      Console.WriteLine("m={0}", m);
+
+      decimal notQuiteWholeM = m+m+m+m+m+m; // 1.0000000000000000000000000002M
+      double notQuiteWholeD = d+d+d+d+d+d; // 0.99999999999999989
+      Console.WriteLine("notQuiteWholeM={0}", notQuiteWholeM);
+      Console.WriteLine("notQuiteWholeD={0}", notQuiteWholeD);
+    }
+
+    {
+      Dude d1 = new Dude ("John");
+      Dude d2 = new Dude ("John");
+      Console.WriteLine (d1 == d2); // False
+      Dude d3 = d1;
+      Console.WriteLine (d1 == d3); // True
+
+      string escaped = "First Line\r\nSecond Line";
+      string verbatim = @"First Line
+Second Line";
+      // True if your text editor uses CR-LF line separators:
+      Console.WriteLine (escaped);
+      Console.WriteLine (verbatim);
+      Console.WriteLine (escaped == verbatim);
+
+      string xml = @"<customer id=""123""></customer>";
+      Console.WriteLine (xml); // <customer id="123"></customer>
+
+      int x = 4;
+      // calling ToString method or equivalent
+      Console.WriteLine ($"A square has {x} sides"); // Prints: A square has 4 sides
+
+      string s = $"255 in hex is {byte.MaxValue:X2}"; // X2 = 2-digit hexadecimal
+      // Evaluates to "255 in hex is FF"
+      Console.WriteLine(s) ;
+
+      // ternary conditional operator, wrap the entire expression in parentheses:
+      bool b = true;
+      Console.WriteLine ($"The answer in binary is {(b ? 1 : 0)}");
+
+      // Note that $ must appear before @ prior to C# 8:
+      string s2 = $@"this interpolation spans {
+      x} lines";
+      Console.WriteLine(s2) ;
+
+
+      // Constant interpolated strings (C# 10)
+      const string greeting = "Hello";
+       string message = $"{greeting}, world";
+      Console.WriteLine(message) ;
+
     }
   }
 
