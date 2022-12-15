@@ -1,0 +1,8 @@
+echo remove exe and back up files
+rm -vf ./*.exe ./*~
+find ./ -name '123*.exe' -exec rm -vf {} \;
+find ./ -name '*.cpp~'   -exec rm -vf {} \;
+find ./ -name '*.c~'     -exec rm -vf {} \;
+find ./ -name '*.o'      -exec rm -vf {} \;
+find ./ -name 'gcm.cache' -exec rm -vfr {} \;
+
