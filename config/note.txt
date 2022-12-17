@@ -69,6 +69,13 @@ Publication Date: 2018-04-10
 ISBN-10: 1119449278
 ISBN-13: 9781119449270
 
+
+The C++ Standard Library: Learn all the essential information on the C++ 17 standard,
+2nd Edition by Rainer Grimm. Published by Learn pub.
+English | 251 Pages | ISBN: 9781838981129
+
+
+
 ===========================================================================
 https://gist.github.com/baiwfg2/af827b8b75eebf8ab29f5531a0d265ce
 https://gist.github.com/baiwfg2/af827b8b75eebf8ab29f5531a0d265ce
