@@ -30,5 +30,5 @@ page 37
 [5] C++20
 Page: 367/659 pre-defined concepts
 format.h does not compile, skip
-Page 406: concurrency
+Page 482: concurrency
 
