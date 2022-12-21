@@ -2,3 +2,7 @@ C# 10.0
 page 36: double Versus decimal
 page 54: arrays
 
+C# 7.0
+page 139/1089
+delegates
+
