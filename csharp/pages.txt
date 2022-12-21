@@ -3,6 +3,18 @@ page 36: double Versus decimal
 page 54: arrays
 
 C# 7.0
-page 139/1089
-delegates
+page 145/1089
+Generic delegate type parameter variance
+
+Modern C++ Programming Cookbook: Master C++ core language and standard library features, with over 100 recipes, updated to C++20, 2nd Edition
+
+
+Modern C++ Programming Cookbook Second Edition C++20
+
+https://mariusbancila.ro/blog/2020/09/16/the-2nd-edition-of-modern-cpp-programming-cookbook-has-been-published/
+
+
+Beginning C++17: From Novice to Professional Paperback – 24 Mar. 2018
+by Ivor Horton (Author), Peter Van Weert  (Contributor)
+
 

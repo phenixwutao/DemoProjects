@@ -1,0 +1,12 @@
+Template Metaprogramming with C++: Learn everything about C++ templates and unlock the power of template metaprogramming
+by Marius Bancila
+Length: 480 pages
+Edition: 1
+Language: English
+Publisher: Packt Publishing
+Publication Date: 2022-08-19
+ISBN-10: 1803243457
+ISBN-13: 9781803243450
+
+page: 1
+
