@@ -92,6 +92,13 @@ class test
         Console.WriteLine(k + " ");
     }
 
+    {
+      int factor =2;
+      Func<int,int> multiplier = n => n* factor;
+      factor = 10;
+      Console.WriteLine(multiplier(3));      
+    }
+
 
     Console.WriteLine();
   }
