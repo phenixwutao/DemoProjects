@@ -46,6 +46,11 @@ class test
       Console.WriteLine(x2 + " , " + x3);
     }
 
+    {
+      // anonymous types
+      var dude = new {Name = "Bob", Age = 23};
+    }
+
     Console.WriteLine();
   }
 

@@ -3,8 +3,8 @@ page 36: double Versus decimal
 page 54: arrays
 
 C# 7.0
-page 181/1089
-Anonymous Types
+page 213/1089
+Framework Overview
 
 Modern C++ Programming Cookbook: Master C++ core language and standard library features, with over 100 recipes, updated to C++20, 2nd Edition
 
