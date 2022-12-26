@@ -12,3 +12,10 @@ page: 237/480
 Concepts and Constraints
 
 https://refactoring.guru/design-patterns/cpp
+
+C++ concurrency and Design patterns:
+https://github.com/pvthuyet/Concurrency_With_Modern_Cpp
+
+https://github.com/MericLuc/Design-patterns
+
+https://github.com/David-Haim/concurrencpp
