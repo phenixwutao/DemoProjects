@@ -3,8 +3,13 @@ page 36: double Versus decimal
 page 54: arrays
 
 C# 7.0
-page 213/1089
+page 229/1089
 Framework Overview
+
+C# 7.0
+Threading page 588 ch14 asynch operation
+
+
 
 Modern C++ Programming Cookbook: Master C++ core language and standard library features, with over 100 recipes, updated to C++20, 2nd Edition
 
@@ -17,4 +22,6 @@ https://mariusbancila.ro/blog/2020/09/16/the-2nd-edition-of-modern-cpp-programmi
 Beginning C++17: From Novice to Professional Paperback – 24 Mar. 2018
 by Ivor Horton (Author), Peter Van Weert  (Contributor)
 
+A Complete Guide to Standard C++ Algorithms
 
+https://hackingcpp.com/cpp/std/algorithms.html
