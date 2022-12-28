@@ -1,7 +1,7 @@
 https://github.com/PacktWorkshops
 
-page: 109/176 
-SOLID Principles in OOP
+page: 166/233
+delegates, events, lambdas
 
 Mathieu Amalric
 Marion Cotillard Movies
