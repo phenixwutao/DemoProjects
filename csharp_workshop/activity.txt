@@ -1,0 +1,2 @@
+LogToFile: VerifyPin called PIN=1232
+LogToFile: ShowBalance called: balance =999

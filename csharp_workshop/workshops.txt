@@ -1,12 +1,14 @@
 https://github.com/PacktWorkshops
 
-page: 166/233
-delegates, events, lambdas
+page: 199/266 events
+page: 227/294 data structures and Linq
+page: 330/403 thread concurrency: continuation task
+page: 348/415 asynchronous programming
 
 Mathieu Amalric
 Marion Cotillard Movies
 Emmanuelle Devos
-
+02:02
 
 
 

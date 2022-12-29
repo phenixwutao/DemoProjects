@@ -1,12 +1,10 @@
 using System;
+using System.IO; // File class
 using System.Text;
 using static System.Math;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Threading;
-using System.Threading.Tasks;
 
+// this is a exercise
 public class Test
 {
 
