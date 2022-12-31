@@ -1,0 +1,4 @@
+Concurrency with Modern C++
+page 33 atomic
+page 46 atomic shared pointer
+page 65 memory model
