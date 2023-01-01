@@ -1,0 +1,12 @@
+1. Install intellij editor community version
+sudo add-apt-repository ppa:mmk2410/intellij-idea
+sudo apt upgrade
+sudo apt update
+sudo apt install intellij-idea-community
+
+2. Install Java compiler JDK and JRE
+openjdk-17-jdk
+openjdk-17-jre
+openjdk-17-dbg
+openjdk-17-demo
+

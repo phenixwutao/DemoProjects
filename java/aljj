@@ -1,0 +1,23 @@
+#! /usr/bin/bash
+# extension="${filename##*.}"
+# filename="${filename%.*}" 
+JAVAFILE=$1
+FILENAME=${JAVAFILE%.*}
+FILEEXT=${JAVAFILE##*.}
+
+SRCFILES=$@
+EXECFILE=123786.exe
+echo Compile java files "$SRCFILES"
+rm -vf $FILENAME.class
+rm -vf ./$EXECFILE
+echo javac $FILENAME.java
+javac $FILENAME.java
+
+echo please execute java $FILENAME.class ...
+echo ---------------------- execute Start --------------------------
+if [[ -f "$FILENAME.class" ]]; then
+  echo java $FILENAME > $EXECFILE
+  ./$EXECFILE
+fi
+echo ---------------------- execute   End --------------------------
+
