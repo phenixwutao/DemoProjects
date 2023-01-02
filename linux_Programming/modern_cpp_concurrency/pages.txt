@@ -2,4 +2,6 @@ Concurrency with Modern C++
 page 33 atomic
 page 46 atomic shared pointer
 page 65 memory model
-page 82 memory order consume
+page 85 memory order consume
+page 113 thread methods
+
