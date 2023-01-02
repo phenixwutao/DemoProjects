@@ -38,7 +38,7 @@ class Test
 
   public class Car
   {
-    public object Body {get; set;};
+    public object Body {get; set;}
     public virtual void Move(){}
   }
 

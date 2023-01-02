@@ -137,3 +137,88 @@ cat /proc/version
 sudo apt update
 sudo apt full-upgrade
 
+==============================================================================
+dotnet VS code : how to create and build C# projects
+
+[1] New solution
+dotnet new sln -n MyWorkshop
+
+[2] new console project with name and object
+dotnet new console -o MyWorkshop -n MyWorkshop
+-o means --output folder; -n means name of solutin
+
+[3] run console project
+dotnet run -p MyWorkshop/MyWorkshop.csproj  (deprecated)
+dotnet run --project MyWorkshop/MyWorkshop.csproj
+dotnet run --project project_path/project_name.csproj
+
+[4] add project to solution or classlib
+
+dotnet sln MyWorkshop.sln add MyWorkshop/MyWorkshop.csproj
+for example:
+dotnet new sln --name MyProject.sln
+dotnet sln add MyProject.csproj
+
+If you're using PowerShell or bash the below command is handy:
+  dotnet sln path_to_solution.sln add (ls -r **/*.csproj)
+or simply:
+  dotnet sln add (ls -r **/*.csproj)
+
+Add library projects:
+dotnet sln add library/library.csproj
+dotnet add [target project] reference [destination project]
+
+[5] Remove projects in solution file
+dotnet sln [<SOLUTION_FILE>] remove <PROJECT_PATH> [<PROJECT_PATH>...]
+dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
+
+[6] list projects
+dotnet sln todo.sln list
+dotnet sln MyWorkshop.sln  list
+
+[7] Add/Remove multi-projects to a solution:
+dotnet sln todo.sln add todo-app/todo-app.csproj back-end/back-end.csproj --in-root
+dotnet sln todo.sln add todo-app/todo-app.csproj back-end/back-end.csproj
+dotnet sln todo.sln remove todo-app/todo-app.csproj back-end/back-end.csproj
+
+dotnet sln todo.sln add **/*.csproj
+dotnet sln todo.sln remove **/*.csproj
+
+For example:
+Create a solution, a console app, and two class libraries. Add the projects to the solution, and 
+use the --solution-folder option of dotnet sln to organize the class libraries into a solution folder.
+
+dotnet new sln -n mysolution
+dotnet new console -o myapp
+dotnet new classlib -o mylib1
+dotnet new classlib -o mylib2
+dotnet sln mysolution.sln add myapp\myapp.csproj
+dotnet sln mysolution.sln add mylib1\mylib1.csproj --solution-folder mylibs
+dotnet sln mysolution.sln add mylib2\mylib2.csproj --solution-folder mylibs
+
+[8] How to build solution or projects?
+dotnet build [<PROJECT>|<SOLUTION>]
+
+[8.1] build a projects (default as debug)
+dotnet build
+
+[8.2] build in release
+dotnet build --configuration Release
+
+[8.3] build and set version:
+dotnet build -p:Version=1.2.3.4
+
+[9] run after compile C# projects
+dotnet /mnt/d/trade/demoProjects/csharp_workshop/solution/MyWorkshop/bin/Debug/net6.0/MyWorkshop.dll
+dotnet run --project MyWorkshop/MyWorkshop.csproj
+dotnet run --project MyWorkshop/ex01.csproj
+
+==============================================================================
+dotnet VS code : how to create and build Java projects
+
+==============================================================================
+dotnet VS code : how to create and build C++ projects
+
+
+==============================================================================
+dotnet VS code : how to create and build Python projects

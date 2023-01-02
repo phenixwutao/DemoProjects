@@ -7,6 +7,7 @@
 #include <memory> // smart pointers
 
 #include <thread>
+#include <mutex>
 #include <utility> // Date and time utilities
 #include <atomic>
 
