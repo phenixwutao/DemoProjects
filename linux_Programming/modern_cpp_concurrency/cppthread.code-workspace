@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../java"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"thread": "cpp"
+		}
+	}
+}

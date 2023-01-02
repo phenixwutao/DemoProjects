@@ -10,3 +10,36 @@ openjdk-17-jre
 openjdk-17-dbg
 openjdk-17-demo
 
+3. Remove intellij-idea-community
+
+Delete the installation directory.
+Remove the following directories:
+
+Syntax
+~/.config/JetBrains/<product><version>
+~/.cache/JetBrains/<product><version>
+~/.local/share/JetBrains/<product><version>
+
+Example
+~/.config/JetBrains/IntelliJIdea2022.3
+~/.cache/JetBrains/IntelliJIdea2022.3
+~/.local/share/JetBrains/IntelliJIdea2022.3
+
+4 Install VS code
+(1) sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+
+(2) Import the Microsoft GPG key using the following wget command :
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+
+And enable the Visual Studio Code repository by typing:
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+
+Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+
+(3) Once the apt repository is enabled , install the Visual Studio Code package:
+sudo apt install code
+sudo apt update
+sudo apt upgrade
+
+
