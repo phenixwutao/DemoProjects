@@ -59,7 +59,7 @@ private static void DemoRecord()
 
   private static void DemoInit()
   {
-    var house1 = new House
+      var house1 = new House
               {
                   Address = "Kings street 4",
                   Owner = "King",

@@ -5,3 +5,5 @@ page 65 memory model
 page 85 memory order consume
 page 113 thread methods
 page 127 shared locks
+page 139 dead lock
+page 159 Cooperative Interruption (C++20)
