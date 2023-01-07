@@ -62,22 +62,10 @@ int main(int argc, char *argv[])
   auto fut2 = prom.get_future();
   std::thread thr2(function2, std::move(prom), stpToken, "std::promise");
 
-  if (stpToken.stop_requested())
-    std::cout << "check main 1: Stop requested\n";
-  else
-    std::cout << "check main 1: Stop not requested\n";
-
-  stopSource.request_stop();
-
-  if (stpToken.stop_requested())
-    std::cout << "check main 2: Stop requested\n";
-  else
-    std::cout << "check main 2: Stop not requested\n";
-
-  //std::this_thread::sleep_for(2s);
   thr1.join();
   thr2.join();
 
+  stopSource.request_stop(); // Effectively only main thread reacts to the signal
 
   if (stpToken.stop_requested())
     std::cout << "check main 3: Stop requested\n";

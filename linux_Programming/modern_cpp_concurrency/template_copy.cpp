@@ -13,6 +13,9 @@
 #include <utility> // Date and time utilities
 #include <atomic>
 #include <future>
+#include <semaphore>
+#include <latch>
+#include <barrier>
 
 #include <chrono>
 #include <functional> // std::function<>
