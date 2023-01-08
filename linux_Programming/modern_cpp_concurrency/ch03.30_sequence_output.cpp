@@ -17,6 +17,7 @@
 #include <semaphore>
 #include <latch>
 #include <barrier>
+#include <syncstream>
 
 #include <chrono>
 #include <functional> // std::function<>
@@ -32,6 +33,14 @@ using namespace std::chrono_literals;
 int main(int argc, char *argv[])
 {
   std::cout << std::boolalpha;
+  std::osyncstream bout1(std::cout);
+  bout1 << "Hello, ";
+  {
+    std::osyncstream(bout1.get_wrapped()) << "Goodbye, "
+                                          << "Planet! " << '\n';
+  } // emits the contents of the temporary buffer
+  
+  bout1 << "World!\n";
   return 0;
 }
 

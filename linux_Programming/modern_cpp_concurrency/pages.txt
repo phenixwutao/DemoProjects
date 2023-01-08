@@ -8,3 +8,11 @@ page 127 shared locks
 page 139 dead lock
 page 159 Cooperative Interruption (C++20)
 page 196 tasks
+page 225 Parallel Algorithms of the Standard Template Library
+
+'THE SILENCE OF THE LAMBS' (1991)
+LITTLE WOMEN (2019)
+
+Actor: Lindsay Lohan, Jonathan Bennett, Rachel McAdams
+Actor: Brittany Murphy, Dakota Fanning, Marley Shelton, Donald Faison
+Actor: Dakota Fanning, Elizabeth Olsen, Demi Moore

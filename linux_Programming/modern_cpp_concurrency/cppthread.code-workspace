@@ -6,7 +6,9 @@
 	],
 	"settings": {
 		"files.associations": {
-			"thread": "cpp"
+			"thread": "cpp",
+			"chrono": "cpp",
+			"syncstream": "cpp"
 		}
 	}
 }

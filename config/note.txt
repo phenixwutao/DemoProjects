@@ -89,8 +89,12 @@ http://223.15.176.22:8910/ebooks/
 http://223.15.176.22:8910/ebooks/
 https://github.com/aforarup/interview
 https://github.com/aforarup/interview
+https://my-subs.co/  sub-titles
+https://my-subs.co/  sub-titles
 https://archive.org/
 https://archive.org/
+https://m4uhd.tv/
+https://m4uhd.tv/
 https://github.com/RainerGrimm
 https://github.com/RainerGrimm
 ===========================================================================
