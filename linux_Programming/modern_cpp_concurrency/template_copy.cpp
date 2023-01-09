@@ -8,6 +8,8 @@
 #include <memory> // smart pointers
 #include <exception>
 
+#include <execution> // parallel execution policy
+
 #include <thread>
 #include <mutex>
 #include <shared_mutex>
