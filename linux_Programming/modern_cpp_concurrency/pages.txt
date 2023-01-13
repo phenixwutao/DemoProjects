@@ -9,6 +9,8 @@ page 139 dead lock
 page 159 Cooperative Interruption (C++20)
 page 196 tasks
 page 233 Parallel Algorithms of the Standard Template Library
+page 246 Coroutines
+
 
 'THE SILENCE OF THE LAMBS' (1991)
 LITTLE WOMEN (2019)
