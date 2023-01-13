@@ -28,6 +28,9 @@
 
 #include <condition_variable>
 
+#include <algorithm>
+#include <numeric>
+
 using namespace std;
 using namespace std::chrono_literals;
 
