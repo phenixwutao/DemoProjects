@@ -1,0 +1,4 @@
+https://www.runoob.com/design-pattern/facade-pattern.html
+
+https://design-patterns.readthedocs.io/zh_CN/latest/index.html
+
