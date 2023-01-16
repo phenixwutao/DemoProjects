@@ -1,3 +1,6 @@
 # Python in a Nutshell
 # Packt Python Master the Art of Design Patterns 
-# page 51
+# module 1: page 72/93
+# module 2: page 
+
+
