@@ -1,6 +1,10 @@
 # Python in a Nutshell
 # Packt Python Master the Art of Design Patterns 
-# module 1: page 95/116
+# module 1: page  144/165 In practice
+            page 166 data structure: dictionary
+            page 168 Counter
+
+
 
 # module 2: page 
 
