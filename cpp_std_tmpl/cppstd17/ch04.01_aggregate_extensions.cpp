@@ -28,6 +28,10 @@ struct D : std::string, std::complex<T>
   std::string data;
 };
 
+auto foo(bool n, bool m) {
+    return n + m;
+}
+
 int main()
 {
   Data x{"hello", 1.1};
@@ -40,6 +44,14 @@ int main()
 
   D<float> s{{"hello"}, {4.5,6.7}, "world"}; // OK since C++17
   std::cout << std::is_aggregate<decltype(s)>::value << '\n'; // outputs: 1 (true)
+
+  bool a = true;
+  bool b = true;
+
+  auto c = a + b;
+
+  std::cout << c << ", " << typeid(c).name() << '\n';
+  std::cout << foo(a,b) << '\n';
 
   return 0;
 }

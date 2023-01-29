@@ -9,6 +9,10 @@
 
 using namespace std;
 
+namespace A::B::C {
+  void foo(){}
+}
+
 int main()
 {
   return 0;
