@@ -1,6 +1,6 @@
 for i in *.rar; do
   echo ================================================
   echo "Process: $i"
-  ./tidy_rar_file "$i"
+  ./tidy_rar_file_prompt "$i"
 done
 
