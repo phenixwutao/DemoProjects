@@ -121,6 +121,8 @@ https://www.letmeread.net/
 https://downmagaz.net/
 https://downmagaz.net/
 
+https://cheatsheet.czutro.ch/root/computing/programming-languages/c/c20/
+https://cheatsheet.czutro.ch/root/computing/programming-languages/c/c20/
 
 sudo dpkg -i powershell-lts_7.3.0-1.deb_amd64.deb
 sudo apt-get install -f
