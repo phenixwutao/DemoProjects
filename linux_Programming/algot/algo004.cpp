@@ -325,6 +325,38 @@ int maxProfitMany(vector<int>& prices)
   return sum;
 }
 
+int maxProfit3(vector<int>& prices)
+{
+  if (prices.size() < 2)
+    return 0;
+
+    const int n = prices.size();
+    vector<int> f(n,0);
+    vector<int> g(n,0);
+
+int cur_min = std::numeric_limits<int>::max();
+int cur_max = std::numeric_limits<int>::min();
+cur_min = prices[0];
+for(int i = 1; i < n; ++i)
+  {
+    cur_min = min(cur_min, prices[i]);
+    f[i] = max(f[i], prices[i] - cur_min);
+  }
+
+for(int i = n-2, cur_max = prices[n-1]; i>=0; --i)
+  {
+    cur_max = max(cur_max, prices[i]);
+    g[i] = max(g[i], cur_max - prices[i]);
+  }
+
+  int max_profit = 0;
+  for(int i = 0; i<n; ++i)
+  {
+    max_profit = max(max_profit, f[i] + g[i]);
+  }
+  return max_profit;
+}
+
 int main()
 {
   std::cout << std::boolalpha ;
