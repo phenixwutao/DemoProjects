@@ -357,8 +357,109 @@ for(int i = n-2, cur_max = prices[n-1]; i>=0; --i)
   return max_profit;
 }
 
+int minPathSum(vector<vector<int>>& grid)
+{
+  if (grid.size() == 0) return 0;
+  const int m = grid.size();
+  const int n = grid[0].size();
+  int f[m][n] = {}; // path search buffer
+  f[0][0] = grid[0][0];
+  for(int i=1; i < m; ++i)
+  {
+    f[i][0] = f[i-1][0] + grid[i][0];
+  }
+  for(int j=1; j<n; ++j)
+  {
+    f[0][j] = f[0][j-1] + grid[0][j];
+  }
+  for(int i=1; i<m; ++i)
+  {
+    for(int j=1; j<n; ++j)
+    {
+      f[i][j] = min(f[i-1][j], f[i][j-1]) + grid[i][j];
+    }
+  }
+  return f[m-1][n-1];
+}
+
+int distinctSubString(const string& S, const string& T)
+{
+  vector<int> f(T.size() + 1);
+  f[0] = 1;
+  for(int i = 0; i < S.size(); ++i)
+  {
+    for (int j = T.size() -1; j>=0; --j)
+    {
+      f[j+1] += (S[i] == T[j])  ? f[j]  :  0;
+      printf("i %d , j %d, S[i] %c, T[j] %c, f[j+1] %d, f[j] %d\n", i, j, S[i], T[j], f[j+1], f[j]);
+    }
+  }
+  return f[T.size()];
+}
+
+vector<int> TwoSum(const vector<int>& arr, int target)
+{
+  vector<int> result;
+  if (arr.size() == 0)
+  return result;
+  std::unordered_map<int,int> mapping;
+  for(int i = 0; i < arr.size(); ++i)
+  {
+    mapping[arr[i]] = i;
+  }
+  for(int i = 0; i < arr.size(); ++i)
+  {
+    int diff = target - arr[i];
+    if(mapping.find(diff) != mapping.end() && mapping[diff] > i)
+    {
+      result.push_back(i+1);
+      result.push_back(mapping[diff]+1);
+      break;
+    }
+  }
+  return result;
+
+}
+
+int removeElement1(vector<int>& nums, int target)
+{
+  return std::distance(nums.begin(), std::remove(nums.begin(), nums.end(), target));
+}
+
+int removeElement2(vector<int>& nums, int target)
+{
+  int index = 0;
+  for(int i = 0; i < nums.size(); ++i)
+  {
+    if (nums[i] != target)
+    {
+      nums[index++] = nums[i];
+    }
+  }
+}
+
+class Base {
+public:
+virtual void f() { cout << "Base::f()" << endl; }
+};
+
+class Derived : public Base {
+private:
+void f() { cout << "Derived::f()" << endl; }
+};
+
+void f(const string & s) {}
+
 int main()
 {
+  f("test");
+  
+  // access control is only checked during compile time. Since p is pointer of type Base and 
+  // Base has public function f, the code will compile.
+  Base * p = new Derived();
+  p->f();
+  delete p;
+
   std::cout << std::boolalpha ;
   std::cout << RomanToInteger("IV") << endl;
   std::cout << IntegerToRoman(1994) << endl;
@@ -395,5 +496,15 @@ int main()
   vector<int> prices = {7,1,5,3,6,4};
   std::cout << maxProfit(prices) << '\n';
   std::cout << maxProfitMany(prices) << '\n';
+
+  string S = "rabbbit", T = "rabbit";
+  std::cout << distinctSubString(S,T) << '\n';
+
+  vector<int> numbers={2, 7, 11, 15};
+  int target = 9;
+  auto result = TwoSum(numbers, target);
+  for(auto i : result)
+  cout << i << endl;
+
 	return 0;
 }
